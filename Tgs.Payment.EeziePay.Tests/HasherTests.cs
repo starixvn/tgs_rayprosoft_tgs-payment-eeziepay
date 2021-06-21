@@ -9,7 +9,7 @@ namespace Tgs.Payment.EeziePay.Tests
 {
     [TestFixture]
     public class HasherTests
-    {    
+    {
         [Test]
         public void TestDepositSignExample()
         {
@@ -42,6 +42,7 @@ namespace Tgs.Payment.EeziePay.Tests
 
             Assert.AreEqual(except, actual);
         }
+
         [Test]
         public void TestEeziePayHasher()
         {
@@ -92,50 +93,5 @@ namespace Tgs.Payment.EeziePay.Tests
 
             Assert.AreEqual(except, actual);
         }
-
-        [Test]
-        public void TestWithdrawSignExample()
-        {
-            var merchantEncryptionKey = "AbCdEfGhIjK1234567";
-           
-            var dict = new Dictionary<string, object>
-            {
-                ["service_version"] = "3.0",
-                ["partner_code"] = "1bvc123",
-                ["partner_orderid"] = "1234567",
-                ["member_id"] = "member1",
-                ["currency"] = "VND",
-                ["amount"] = "1000",
-                ["account_name"] = "abd",
-                ["account_number"] = "12345678",
-                ["bank_province"] = "HCM",
-                ["bank_city"] = "HCM",
-                ["bank_branch"] = "HCM",//更前面範例沒這個參數 A345D436F81573FC4421B1F71CB90298CF446D4D
-                ["bank_code"] = "VCB.VN",
-                ["notify_url"] = "http://abc.com/ereturn.asp"
-            };
-            //066FAD5B5590BFAF5CAC9DED7687D97433553F49
-
-            var except = "EDB2846C6C5001727A7E3D296EDE7AE28A83E31A";
-            var hasher = new EeziePayHasher();
-            var actualHasher = hasher.ComputeHash(merchantEncryptionKey, dict);
-            var fullText = "service_version=3.0&partner_code=1bvc123&partner_orderid=1234567&member_id=member1&currency=VND&amount=1000&account_name=abd&account_number=12345678&bank_province=HCM&bank_city=HCM&bank_branch=HCM&bank_code=VCB.VN&notify_url=http://abc.com/ereturn.asp&key=AbCdEfGhIjK1234567";
-
-            //3491C549285386AD13665A667DEA3443F57FD154
-            
-            //066FAD5B5590BFAF5CAC9DED7687D97433553F49
-            //var fullText = "service_version=3.0&partner_code=1bvc123&partner_orderid=1234567&member_id=member1&currency=VND&amount=1000&account_name=abd&account_number=12345678&bank_province=HCM&bank_city=HCM&bank_code=VCB.VN&notify_url=http://abc.com/ereturn.asp&key=AbCdEfGhIjK1234567";
-            //A345D436F81573FC4421B1F71CB90298CF446D4D
-            //var fullText = "service_version=3.0&partner_code=1bvc123&partner_orderid=1234567&member_id=member1&currency=VND&amount=1000&account_name=abd&account_number=12345678&bank_province=HCM&bank_city=HCM&bank_branch=HCM&bank_code=VCB.VN&notify_url=http://abc.com/ereturn.asp&key=AbCdEfGhIjK1234567";
-            SHA1 sha1 = new SHA1CryptoServiceProvider();
-            var bytes = Encoding.UTF8.GetBytes(fullText);
-            var bytesHash = sha1.ComputeHash(bytes);
-            var str = BitConverter.ToString(bytesHash);
-            var actual = str.Replace("-", "").ToUpper();
-
-            Assert.AreEqual(except, actual);
-
-        }
-   
     }
 }

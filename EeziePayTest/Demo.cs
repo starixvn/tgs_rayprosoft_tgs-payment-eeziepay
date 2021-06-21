@@ -35,7 +35,8 @@ namespace EeziePayTest
                 merchantCode,
                 merchantTransactionId,
                 membersId,
-                transactionCurrency
+                transactionCurrency,
+                "https://google.com"
                 );
             var depositReturn = await _paymentClient.DepositAsync("tgs.payment.eeziepay.deposit", 100000, _eeziePaySerializer.Serialize(depositSettings));
             _logger.LogInformation($"Deposit Return:", depositReturn);
