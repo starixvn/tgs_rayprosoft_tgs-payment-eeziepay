@@ -1,4 +1,6 @@
-﻿namespace Tgs.Payment.EeziePay
+﻿using System;
+
+namespace Tgs.Payment.EeziePay
 {
-    public record EeziePayDepositSettings(string MerchantEncryptionKey, string ApiVersion, string MerchantCode, string MerchantTransactionId, string MembersId, string TransactionCurrency,string RedirectUrl);
+    public record EeziePayDepositSettings(string MerchantEncryptionKey, string ApiVersion, string MerchantCode, Guid MerchantTransactionId, string MembersId, string TransactionCurrency, string RedirectUrl);
 }

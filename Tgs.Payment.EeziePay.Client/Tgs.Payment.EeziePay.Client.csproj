@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Tgs.Payment.EeziePay</RootNamespace>
     <Nullable>enable</Nullable>
-    <Version>0.0.1-alpha</Version>
+    <Version>0.0.2-alpha</Version>
     <Authors>Raypro</Authors>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-payment-eeziepay</PackageProjectUrl>

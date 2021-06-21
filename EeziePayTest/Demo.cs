@@ -26,7 +26,7 @@ namespace EeziePayTest
             var merchantEncryptionKey = "";
             var apiVersion = "3.0";
             var merchantCode = "";
-            var merchantTransactionId = "";
+            var merchantTransactionId = Guid.NewGuid();
             var membersId = "";
             var transactionCurrency = "VND";//VND,THB,IDR,MYR
             var depositSettings = new EeziePayDepositSettings(

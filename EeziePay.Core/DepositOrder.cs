@@ -33,7 +33,7 @@ namespace Tgs.Payment.EeziePay
         /// </summary>
 
         [JsonPropertyName("partner_orderid")]
-        public string MerchantTransactionId { get; init; } = default!;
+        public Guid MerchantTransactionId { get; init; } = default!;
 
         /// <summary>
         /// The member that is currently
