@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Tgs.Payment.EeziePay</RootNamespace>
+    <Nullable>enable</Nullable>
+    <Version>0.0.1-alpha</Version>
+    <Authors>Raypro</Authors>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-payment-eeziepay</PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/rayprosoft/tgs-payment-eeziepay.git</RepositoryUrl>
+    <PackageTags>tgs payment</PackageTags>
+  </PropertyGroup>
+
+</Project>
