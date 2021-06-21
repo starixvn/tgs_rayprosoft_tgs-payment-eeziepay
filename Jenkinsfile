@@ -48,7 +48,7 @@ pipeline {
 			steps {
 				configFileProvider([
 					configFile(
-						fileId: 'applepay.dev.json', 
+						fileId: 'eeziepay.dev.json', 
 						variable: 'eeziepaydev')]) {
 					script {
 						def json = readJSON file: "$eeziepaydev";
