@@ -10,7 +10,7 @@ ARG BuildConfiguration=Release
 RUN --mount=type=secret,id=nuget,dst=/pat cp /pat ~/.nuget/NuGet/NuGet.Config
 RUN dotnet nuget remove source 'Microsoft Visual Studio Offline Packages' || true
 WORKDIR /src
-COPY ["Nuget.config", "."]
+COPY ["NuGet.config", "."]
 COPY ["Tgs.Payment.EeziePay/Tgs.Payment.EeziePay.csproj", "Tgs.Payment.EeziePay/"]
 COPY ["EeziePay.Repositories/EeziePay.Repositories.csproj", "EeziePay.Repositories/"]
 COPY ["EeziePay.Core/EeziePay.Core.csproj", "EeziePay.Core/"]
