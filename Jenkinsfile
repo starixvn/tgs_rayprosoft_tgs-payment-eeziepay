@@ -5,7 +5,7 @@ pipeline {
 	
 	environment {
 		BuildConfiguration="Debug"
-		ImageName="registry.gitlab.com/rayprosoft/turnkey-gaming-system/payment-eeziepay"
+		ImageName="pgtgs/payment-eeziepay"
 		ImageTagUrl = "https://gitlab.com/api/v4/projects/20478010/registry/repositories/9999999/tags"
 	}
 
