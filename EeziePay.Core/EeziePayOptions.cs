@@ -10,6 +10,9 @@ namespace Tgs.Payment.EeziePay
 
         public Uri PaymentApiUrl { get; set; } = default!;
 
+        public Uri PaymentServiceBaseUrl { get; set; } = default!;
+        
+
         public JsonSerializerOptions? SystemSerializerOptions { get; set; }
     }
 }

@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgs.Payment.EeziePay", "Tgs.Payment.EeziePay\Tgs.Payment.EeziePay.csproj", "{59743419-729D-49FE-9209-4546088AB987}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgs.Payment.EeziePay.Tests", "Tgs.Payment.EeziePay.Tests\Tgs.Payment.EeziePay.Tests.csproj", "{4934A249-D551-45A8-8BE4-6F2DFD59DD31}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EeziePay.Core", "EeziePay.Core\EeziePay.Core.csproj", "{03C5C897-9B06-4B1F-883B-B152DD807CB2}"
 EndProject
@@ -17,9 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		NuGet.config = NuGet.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EeziePay.Repositories", "EeziePay.Repositories\EeziePay.Repositories.csproj", "{0FB7FC65-AFB6-47EB-88AE-903380544FF6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EeziePayTest", "EeziePayTest\EeziePayTest.csproj", "{6593507A-5FBF-414D-AA7B-E2C4BFD22126}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EeziePay.Repositories", "EeziePay.Repositories\EeziePay.Repositories.csproj", "{0FB7FC65-AFB6-47EB-88AE-903380544FF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +27,6 @@ Global
 		{59743419-729D-49FE-9209-4546088AB987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59743419-729D-49FE-9209-4546088AB987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59743419-729D-49FE-9209-4546088AB987}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4934A249-D551-45A8-8BE4-6F2DFD59DD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4934A249-D551-45A8-8BE4-6F2DFD59DD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4934A249-D551-45A8-8BE4-6F2DFD59DD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4934A249-D551-45A8-8BE4-6F2DFD59DD31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{03C5C897-9B06-4B1F-883B-B152DD807CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{03C5C897-9B06-4B1F-883B-B152DD807CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03C5C897-9B06-4B1F-883B-B152DD807CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,10 +39,6 @@ Global
 		{0FB7FC65-AFB6-47EB-88AE-903380544FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB7FC65-AFB6-47EB-88AE-903380544FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB7FC65-AFB6-47EB-88AE-903380544FF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6593507A-5FBF-414D-AA7B-E2C4BFD22126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6593507A-5FBF-414D-AA7B-E2C4BFD22126}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6593507A-5FBF-414D-AA7B-E2C4BFD22126}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6593507A-5FBF-414D-AA7B-E2C4BFD22126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

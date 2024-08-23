@@ -1,6 +1,8 @@
-﻿namespace Tgs.Payment.EeziePay
+﻿using System;
+
+namespace Tgs.Payment.EeziePay
 {
-    public class EeziePayWithdrawFailResponse : EeziePayWithdrawResponse
+    public record EeziePayWithdrawFailResponse(Guid FormId)
     {
     }
 }

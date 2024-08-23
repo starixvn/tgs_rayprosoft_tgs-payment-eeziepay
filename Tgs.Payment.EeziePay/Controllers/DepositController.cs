@@ -74,7 +74,7 @@ namespace Tgs.Payment.EeziePay.Controllers
                 _logger.LogInformation(JsonSerializer.Serialize(callbackMessage, jsonSerializerOptions));
 
                 await approveService
-                    .ExecuteAsync(new ApproveDepositFormCommand(depositForm.Id, depositForm.BrandId))
+                    .ExecuteAsync(new ApproveDepositFormCommand(depositForm.Id, depositForm.BrandId, depositForm.Amount))
                     .ConfigureAwait(false);
             };
 

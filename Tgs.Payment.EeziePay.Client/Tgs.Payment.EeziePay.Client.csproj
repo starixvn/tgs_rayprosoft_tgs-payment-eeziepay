@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Tgs.Payment.EeziePay</RootNamespace>
     <Nullable>enable</Nullable>
     <Version>0.0.2-alpha</Version>
